@@ -13,6 +13,6 @@ ENV NODE_ENV=production DB_HOST=item-db
 # Menginstal dependencies untuk production dan kemudian build aplikasi
 RUN npm install --production --unsafe-perm && npm run build
 
-CMD ["node", "src/index.js"]
+CMD ["npm", "start"]
 
 EXPOSE 8080
