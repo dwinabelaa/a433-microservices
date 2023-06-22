@@ -1,0 +1,21 @@
+version: "2"
+services:
+  item-app:
+  image: dwinabela/item-app;
+  # melakukan port mapping ke port 80
+  ports:
+    - "80:80"
+    depends_on:
+      - item-db
+
+  item-db:
+  # menggunakan docker mongo:3 dari docker hub
+  image: mongo:3
+
+  # memakai volume bernama app-db dengan target /data/db di container
+  volumes:
+    - /data/db:/data/db
+
+  # memiliki satu buah volume bernama app-db
+  volumes:
+    app-db:
