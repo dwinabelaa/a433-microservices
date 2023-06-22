@@ -1,7 +1,7 @@
 version: "2"
 services:
   item-app:
-    image: dwinabela:item-app
+    image: dwinabela/item-app:v1
 
     # melakukan port mapping ke port 80
     ports:
