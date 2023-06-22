@@ -1,7 +1,7 @@
 version: "2"
 services:
   item-app:
-    image: dwinabela/item-app
+    image: dwinabela:item-app
 
     # melakukan port mapping ke port 80
     ports:
@@ -17,6 +17,6 @@ services:
     volumes:
       - app-db:/data/db
 
-    # memiliki satu buah volume bernama app-db
-  volumes:
-    app-db:
+# memiliki satu buah volume bernama app-db
+volumes:
+  app-db:
