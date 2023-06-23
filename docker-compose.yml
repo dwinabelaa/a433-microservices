@@ -5,7 +5,7 @@ services:
 
     # melakukan port mapping ke port 80
     ports:
-      - "8080:80"
+      - "80:8080"
     depends_on:
       - item-db
 
